@@ -14,8 +14,8 @@ void *thread(void *ptr)
 int main() {
     // Create a thread.
     cout << "Creating a PThread..." << endl;
-    pthread_t thread1;
-    if (pthread_create(&thread1, NULL, thread, NULL)) {    // eqvivalent to thread1 = fork(proc, args)
+    pthread_t hThread;
+    if (pthread_create(&hThread, NULL, thread, NULL)) {    // eqvivalent to thread1 = fork(proc, args)
         perror("ERROR");
         exit(0);
     } else {
@@ -24,7 +24,7 @@ int main() {
 
     // Terminate the thread.
     cout << "Block the current thread..." << endl;
-    pthread_join(thread1, NULL);       // eqvivalent to join()
+    pthread_join(hThread, NULL);       // eqvivalent to join()
     cout << "End of execution." << endl;
 
     return 0;

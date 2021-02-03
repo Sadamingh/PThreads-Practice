@@ -9,3 +9,6 @@ all: $(NAME)
 
 %: %.c
 	$(CC) -o $< $(CFLAGS) $(LDFLAGS) $@
+
+clean:
+	rm -f $(NAME)
