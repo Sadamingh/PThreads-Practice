@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/**",
+                "/usr/local/include",
+                "/Library/Developer/CommandLineTools/usr/include/c++/**"
+            ],
+            "defines": [],
+            "macFrameworkPath": [],
+            "cStandard": "c89",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-gcc-x64"
+        }
+    ],
+    "version": 4
+}
