@@ -32,8 +32,8 @@ void *thread(void *ptr)
     }
 
     // Terminate the thread.
-    cout << pthread_self() << ": Block the current thread..." << endl;
-    pthread_join(hThread, NULL);       // eqvivalent to join()
+    cout << pthread_self() << ": Block the current thread...failed" << endl;
+    pthread_join(hThread, NULL);       // useless
     cout << pthread_self() << ": End of execution." << endl;
 
     return 0;
