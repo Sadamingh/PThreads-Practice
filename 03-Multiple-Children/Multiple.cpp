@@ -7,14 +7,14 @@ using namespace std;
 
 void *foo(void *ptr) {
     cout << pthread_self() << ": This is a pthread." << endl;
-    sleep(1);   // does not work because DETACHED
+    sleep(1); 
     return 0;
 }
 
 void *thread(void *ptr)
 {   
     cout << pthread_self() << ": This is a pthread." << endl;
-    sleep(1);   // works because JOINABLE
+    sleep(1); 
 
     cout << pthread_self() << ": Creating a PThread..." << endl;
     pthread_t hThread;
